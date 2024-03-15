@@ -232,3 +232,260 @@ section.about ul.sub-container li .text .more::before {
   text-align: left;
   line-height: 30px;
 }
+
+section.innovation {
+  /* border: 1px solid #000; */
+  margin: 50px 0;
+  height: 500px;
+}
+section.innovation .title {
+  /* border: 3px solid #000; */
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+section.innovation .sub-container {
+  /* border: 1px solid #000; */
+  position: relative;
+}
+section.innovation .img-box {
+  /* border: 1px solid #000; */
+  position: relative;
+  height:45vh;
+  background: no-repeat url('../img/product_1.jpg') center/cover fixed;
+}
+section.innovation .sub-container .inner {
+  /* border: 3px solid #000; */
+  background: white;
+  position: absolute;
+  top: 75%;
+  margin-left: 75px;
+  width: 80%
+  /* text-align: center; */
+}
+section.innovation .sub-container .inner  h3 {
+  /* border: 1px solid #000; */
+  padding: 15px 20px;
+  font-weight: 700;
+}
+section.innovation .sub-container .inner div {
+  /* border: 1px solid red; */
+  padding: 20px 45px;
+  background: rgb(43, 39, 39);
+}
+section.innovation .sub-container .inner p {
+  float: left;
+  width: 80%;
+  line-height: 1.4;
+  color: white;
+  font-size: 13px;
+}
+section.innovation .sub-container .inner a {
+  width: 20%;
+  float: right;
+  position: absolute;
+  /* border: 1px solid orange; */
+  padding: 7px;
+  text-align: center;
+  background: orange;
+  border-radius: 50px;
+  color: white;
+  font-size: 13px;
+  margin-left: 10px;
+  width: 10vw;
+}
+
+section.me {
+  /* border: 1px solid #000; */
+  /* background: rgb(255, 241, 241); */
+  padding: 20px 0;
+  background: url('../img/me.jpg') no-repeat center/cover fixed;
+  position: relative;
+  float: left;
+  height: 800px;
+  margin-bottom: 50px;
+}
+section.me .title p {
+  /* border: 1px solid #000; */
+  padding-bottom: 40px;
+}
+section.me .sub-container {
+  /* border: 1px solid #000; */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  /* padding: 20px 20px; */
+}
+
+section.me .sub-container li {
+  line-height: 1.5;
+  padding: 15px 15px;
+  /* opacity: 0.5; */
+  /* border: 1px solid #000; */
+}
+section.me .list {
+  /* border: 1px solid #000; */
+  /* background: url('../img/me.jpg'); */
+  /* float: right; */
+  /* width: 50%; */
+}
+section.me .sub-container li {
+  /* border: 1px solid #000; */
+}
+section.me .sub-container li h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+section.me .sub-container li i {
+  padding-right: 10px;
+}
+section.me .sub-container li p {
+  padding: 10px 22px;
+}
+section.me .sub-container li i {
+  color: #ff8342;
+}
+section.me .sub-container li a.more {
+  padding-left: 22px;
+  font-weight: 900;
+}
+section #incruit-btn {
+  /* border: 1px solid #000; */
+  text-align: center;
+  /* float: left; */
+  margin-top: 20px;
+  background: #ff8342;
+  padding: 5px 30px;
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  position: absolute;
+  left: 45%;
+}
+section.me .list li ul li {
+  /* border: 1px solid #000; */
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+section.me .list li ul li em {
+  /* border: 3px solid #000; */
+  float: left;
+  width: 20%;
+  font-weight: 900;
+}
+section.me .list li ul li em::after {
+  content: '.';
+  display: inline;
+  padding-left: 50px;
+  color: #ff8342;
+  font-size: 20px;
+}
+section.me .list li ul li p {
+  /* border: 1px solid red; */
+  float: left;
+  width: 80%;
+  text-align: left;
+}
+
+
+/* section sns */
+section.sns {
+  /* border: 3px solid #000; */
+}
+section.sns ul.sub-container{
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+section.sns ul.sub-container li {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 30.5%;
+  margin:10px;
+}
+section.sns ul.sub-container li a{
+  /* border: 3px sol
+  id #ffef0f; */
+  /* float: left; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+section.sns ul.sub-container li a .img-box {
+  overflow: hidden;
+}
+section.sns ul.sub-container li a .img-box img {
+  /* width: 100%; */
+  height: 200px;
+  float: left;
+  width: 100%;
+}
+
+/* 텍스트 전체 싸고 있는 부분 */
+section.sns ul.sub-container li a .bottom {
+  /* border: 5px solid green; */
+  padding: 25px;
+  line-height: 1.5;
+  text-align: left;
+}
+/* 제목 부분 */
+section.sns ul.sub-container li a .bottom .color {
+  color: #ff8342;
+  font-weight: 700;
+  font-size: 13px;
+}
+/* 블라블라 말 있는 부분 */
+section.sns ul.sub-container li a .bottom p {
+  font-size: 15px;
+}
+/* 밑에 시간있는 부분 */
+section.sns ul.sub-container li a .bottom .time {
+  font-size: 10px;
+  padding-top: 13px;
+  color: gray;
+}
+
+
+/* footer style */
+footer {
+  border-top: 1px solid #999;
+  padding: 30px 0;
+}
+footer .inner {
+  width: 84%;
+  margin: 0 auto;
+}
+footer .inner .ft-logo {
+  float: left;
+  width: 14%;
+}
+footer .inner .ft-logo img {
+  width: 100%;
+}
+footer .inner .address {
+  float: left;
+  margin-left: 100px;
+  margin-top: 35px;
+}
+footer .inner .address li:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer .inner .address li:last-child {
+  color: #999;
+}
+
+footer .inner .list {
+  float: right;
+  margin-top: 40px;
+}
+footer .inner .list li {
+  float: left;
+  margin-left: 80px;
+}
+footer .inner .list li:last-child {
+  font-weight: 700;
+}
+footer .inner .list li a:hover {
+  color: #ff8342;
+  text-decoration: underline;
+}
+
