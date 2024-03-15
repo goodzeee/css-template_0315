@@ -11,6 +11,9 @@ header {
  top: 0;
  /* 너비 깨지니 100% 주기 */
  width: 100%;
+ /* 모든 부분에 position줘서 가장 위에 올라와
+  있어야 하는 것 z-index !! */
+ z-index: 9999;
 }
 
 header .inner-header {
@@ -29,7 +32,6 @@ header .inner-header .logo img {
   /* .logo 너비에 img 100% 너비 주기 (딱 맞게) */
   width: 100%;
 }
-
 
 header .inner-header .gnb {
   /* border: 3px solid tomato; */
@@ -84,7 +86,63 @@ header .inner-header .tnb li:last-child i {
   margin-left: 5px;
 }
 
-
 header .inner-header .gnb-mobile {
   display: none;
+}
+/* //header end */
+
+/* section.main style */
+section.main {
+  background: url('../img/vis_4.jpg') no-repeat center/cover fixed;
+  height: 100vh;
+  /* 메인 타이틀에 포지션 걸어주면 부모한테도 걸어두기 */
+  position: relative;
+}
+section.main .main-title {
+  /* background: red; */
+  color: #fff;
+  text-align: center;
+  /* 메인 타이틀 중앙 배치 시키기 하나의 공식 set */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px 10px #123;
+}
+section.main .main-title h2 {
+  font-size: 55px;
+}
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+section.main .main-title .view {
+  font-size: 15px;
+  /* 글자 간격 주기 */
+  letter-spacing: 2px;
+  
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 8px 0;
+  overflow: hidden;
+  position: relative;
+}
+/* view의 복제본 가상 클래스 만들어주기 */
+section.main .main-title .view::after {
+  content: '';
+  /* display: block; */
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  /* 가상 위치 주기 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+section.main .main-title .view:hover::after {
+  width: 100%;
 }
