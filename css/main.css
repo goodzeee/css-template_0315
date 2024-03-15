@@ -1,1 +1,49 @@
 @import url('common.css');
+
+/* header style */
+header {
+ background: orange;
+ height: 100px;
+ line-height: 100px;
+}
+
+header .inner-header {
+  /* border: 3px solid red; */
+  width: 84%;
+  /* 헤더 안에 이너 헤더 마진 주기 */
+  margin: 0 auto;
+}
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  /* 로고 너비 줄이기 */
+  width: 200px
+}
+header .inner-header .logo img {
+  /* .logo 너비에 img 100% 너비 주기 (딱 맞게) */
+  width: 100%;
+}
+
+
+header .inner-header .gnb {
+  /* border: 3px solid tomato; */
+  float: left;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed #000; */
+  /* 안에 li 왼쪽 수평 배치 시켜주기 */
+  float: left;
+  margin-right: 80px;
+}
+
+
+header .inner-header .tnb {
+  /* border: 3px solid navy; */
+  /* tnb 오른쪽 수평 배치 시켜주기 */
+  float: right;
+}
+header .inner-header .tnb li {
+  /* tnb 안에 li 오른쪽 수평 배치 시켜주기 */
+  float: left;
+  margin-right: 25px;
+}
